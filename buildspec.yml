@@ -3,7 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-        - python -m pip install —-upgrade pip
+        - apt-get update
+        - apt-get -y upgrade
         - python -m pip install Flask
   build:
     commands:
